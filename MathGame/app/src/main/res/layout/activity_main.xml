@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/maths_time"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:textAlignment="center"
+        android:fontFamily="@font/pacifico"
+        android:textAllCaps="true"/>
+
+    <!-- Begin Quiz Button -->
+    <Button
+        android:id="@+id/btnBegin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/begin_quiz"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+
+    <!-- Leaderboard Button -->
+    <Button
+        android:id="@+id/btnLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBegin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/blue"
+        android:text="@string/leaderboard"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Questions">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/question"
+            android:textSize="40dp"
+            android:fontFamily="@font/pacifico"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/score"
+            android:layout_below="@id/Question"
+            android:textSize="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:format="%s"
+            android:layout_below="@id/Score"/>
+
+        <TextView
+            android:id="@+id/Result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="30dp"
+            android:translationY="-60dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Score"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="90dp"
+            android:text="@string/math_question"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/Input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:inputType="number"
+            android:textSize="40dp"
+            android:hint="@string/number"
+            android:translationY="70dp"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:hint="@string/username"
+            android:inputType="text"
+            android:textSize="40dp"
+            android:translationY="70dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:backgroundTint="@color/blue"
+            android:text="@string/submit"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:translationY="180dp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
